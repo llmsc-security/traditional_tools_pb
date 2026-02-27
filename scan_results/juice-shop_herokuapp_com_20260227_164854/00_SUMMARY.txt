@@ -1,0 +1,56 @@
+LLM-Enhanced Security Scanner v3.0
+Target  : https://juice-shop.herokuapp.com
+Host    : juice-shop.herokuapp.com  Port: 443
+Started : Fri Feb 27 16:48:54 UTC 2026
+Output  : /mnt/scan_results/juice-shop_herokuapp_com_20260227_164854
+========================================================
+[16:48:54]  Pre-flight: updating nuclei templates...
+[16:49:02]  Pre-flight: ensuring xsstrike dependencies (fuzzywuzzy)...
+[16:49:02]  Target : https://juice-shop.herokuapp.com   Host : juice-shop.herokuapp.com   Port : 443
+[16:49:02]  Output : /mnt/scan_results/juice-shop_herokuapp_com_20260227_164854
+[16:49:02] [>>] STARTED  01_nmap (limit 300s)
+[16:49:02] [>>] STARTED  06_nuclei (limit 600s)
+[16:49:02] [>>] STARTED  02_testssl (limit 300s)
+[16:49:02] [>>] STARTED  08_xsstrike (limit 300s)
+[16:49:02] [>>] STARTED  03_nikto (limit 300s)
+[16:49:02] [>>] STARTED  05_ffuf (limit 300s)
+[16:49:02]  Wave 1 PIDs → nmap:122 testssl:123 nikto:125 katana:127 ffuf:128 nuclei:131 xsstrike:133
+[16:49:02] [>>] STARTED  04_katana (limit 300s)
+[16:49:08] [OK] FINISHED 08_xsstrike (OK in 6s)
+[16:49:27] [OK] FINISHED 04_katana (OK in 25s)
+[16:49:33] [OK] FINISHED 06_nuclei (OK in 31s)
+[16:53:25] [OK] FINISHED 01_nmap (OK in 263s)
+[16:54:02] [WARN] FINISHED 05_ffuf — TIMED OUT after 300s (exit 124)
+[16:54:02] [WARN] FINISHED 02_testssl — TIMED OUT after 300s (exit 124)
+[16:54:02] [WARN] FINISHED 03_nikto — TIMED OUT after 300s (exit 124)
+[16:54:02] [OK] Wave 1 — all jobs finished cleanly
+[16:54:02]  katana → 5 parameterised URLs for dalfox/sqlmap
+[16:54:02] [>>] STARTED  09_sqlmap (limit 900s, PID 9682)
+[16:54:02] [>>] STARTED  07_dalfox (limit 600s)
+[16:54:03] [WARN] ffuf: no 403 hits — using default bypass targets
+[16:54:03] [>>] STARTED  10_403bypass (limit 300s, PID 9722)
+[16:54:03]  Wave 2 PIDs → dalfox:9681 sqlmap:9682 403bypass:9722
+[16:54:24] [OK] FINISHED 09_sqlmap (exit 0)
+[16:56:53] [OK] FINISHED 07_dalfox (OK in 171s)
+[16:59:03] [WARN] FINISHED 10_403bypass — TIMED OUT after 300s
+[16:59:03] [OK] Wave 2 — all jobs finished cleanly
+
+========================================================
+SCAN FINISHED : Fri Feb 27 16:59:03 UTC 2026
+Output dir    : /mnt/scan_results/juice-shop_herokuapp_com_20260227_164854
+Files:
+  00_SUMMARY.txt
+  01_nmap.log
+  02_testssl.log
+  03_nikto.log
+  03_nikto.log.txt
+  04_katana.log
+  05_ffuf.log
+  06_nuclei.log
+  07_dalfox.log
+  08_xsstrike.log
+  09_sqlmap.log
+  09_sqlmap_data
+  10_403bypass.log
+  nuclei_update.log
+========================================================

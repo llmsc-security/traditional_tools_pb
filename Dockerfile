@@ -210,6 +210,8 @@ RUN pip install playwright && \
 COPY security_scanner_system/ ./security_scanner_system/
 COPY dashboard/ ./dashboard/
 COPY reports/ ./reports/
+COPY scan.sh ./scan.sh
+RUN chmod +x /app/scan.sh
 
 # =============================================================================
 # CREATE NECESSARY DIRECTORIES
