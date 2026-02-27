@@ -1,0 +1,14 @@
+# ========================================================
+# Tool    : 07_dalfox
+# Target  : https://juice-shop.herokuapp.com
+# Start   : Fri Feb 27 16:54:02 UTC 2026
+# Timeout : 600s
+# Cmd     : /app/tools/dalfox file /tmp/dalfox_juice-shop_herokuapp_com_20260227_164854.txt --silence --no-color --timeout 15 --output /mnt/scan_results/juice-shop_herokuapp_com_20260227_164854/07_dalfox.log
+# ========================================================
+
+
+# ========================================================
+# End     : Fri Feb 27 16:56:53 UTC 2026
+# Elapsed : 171s
+# Status  : OK in 171s
+# ========================================================

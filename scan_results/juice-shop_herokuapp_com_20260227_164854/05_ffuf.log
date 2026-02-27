@@ -1,0 +1,37 @@
+# ========================================================
+# Tool    : 05_ffuf
+# Target  : https://juice-shop.herokuapp.com
+# Start   : Fri Feb 27 16:49:02 UTC 2026
+# Timeout : 300s
+# Cmd     : /app/tools/ffuf -u https://juice-shop.herokuapp.com/FUZZ -w /tmp/ffuf_fallback.txt -mc 200,201,204,301,302,307,401,403,405 -t 20 -timeout 8 -o /mnt/scan_results/juice-shop_herokuapp_com_20260227_164854/05_ffuf.json -of json
+# ========================================================
+
+
+        /'___\  /'___\           /'___\       
+       /\ \__/ /\ \__/  __  __  /\ \__/       
+       \ \ ,__\\ \ ,__\/\ \/\ \ \ \ ,__\      
+        \ \ \_/ \ \ \_/\ \ \_\ \ \ \ \_/      
+         \ \_\   \ \_\  \ \____/  \ \_\       
+          \/_/    \/_/   \/___/    \/_/       
+
+       v2.1.0
+________________________________________________
+
+ :: Method           : GET
+ :: URL              : https://juice-shop.herokuapp.com/FUZZ
+ :: Wordlist         : FUZZ: /tmp/ffuf_fallback.txt
+ :: Output file      : /mnt/scan_results/juice-shop_herokuapp_com_20260227_164854/05_ffuf.json
+ :: File format      : json
+ :: Follow redirects : false
+ :: Calibration      : false
+ :: Timeout          : 8
+ :: Threads          : 20
+ :: Matcher          : Response status: 200,201,204,301,302,307,401,403,405
+________________________________________________
+
+
+# ========================================================
+# End     : Fri Feb 27 16:54:02 UTC 2026
+# Elapsed : 300s
+# Status  : TIMED OUT after 300s (exit 124)
+# ========================================================

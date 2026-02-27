@@ -1,0 +1,147 @@
+# ========================================================
+# Tool    : 01_nmap
+# Target  : https://juice-shop.herokuapp.com
+# Start   : Fri Feb 27 16:49:02 UTC 2026
+# Timeout : 300s
+# Cmd     : nmap -sV -sC --top-ports 1000 --open -T4 --script http-headers,http-methods,ssl-cert,ssl-enum-ciphers juice-shop.herokuapp.com
+# ========================================================
+
+Starting Nmap 7.95 ( https://nmap.org ) at 2026-02-27 16:49 UTC
+Nmap scan report for juice-shop.herokuapp.com (54.73.53.134)
+Host is up (0.17s latency).
+Other addresses for juice-shop.herokuapp.com (not scanned): 46.137.15.86 54.220.192.176
+Not shown: 997 filtered tcp ports (no-response), 1 closed tcp port (reset)
+Some closed ports may be reported as filtered due to --defeat-rst-ratelimit
+PORT    STATE SERVICE   VERSION
+80/tcp  open  http      heroku-router
+| http-server-header: 
+|   Heroku
+|_  heroku-router
+| fingerprint-strings: 
+|   GetRequest: 
+|     HTTP/1.0 400 Bad Request
+|     Cache-Control: no-cache, no-store
+|     Content-Type: text/html; charset=utf-8
+|     Date: 2026-02-27 16:49:39.158550556 +0000 UTC
+|     Server: heroku-router
+|     Content-Length: 0
+|   HTTPOptions: 
+|     HTTP/1.0 400 Bad Request
+|     Cache-Control: no-cache, no-store
+|     Content-Type: text/html; charset=utf-8
+|     Date: 2026-02-27 16:49:39.550204268 +0000 UTC
+|     Server: heroku-router
+|_    Content-Length: 0
+443/tcp open  ssl/https heroku-router
+| ssl-enum-ciphers: 
+|   TLSv1.2: 
+|     ciphers: 
+|       TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256 (secp256r1) - A
+|       TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA256 (secp256r1) - A
+|       TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA (secp256r1) - A
+|       TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384 (secp256r1) - A
+|       TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA384 (secp256r1) - A
+|       TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA (secp256r1) - A
+|       TLS_RSA_WITH_AES_128_GCM_SHA256 (rsa 2048) - A
+|       TLS_RSA_WITH_AES_128_CBC_SHA256 (rsa 2048) - A
+|       TLS_RSA_WITH_AES_128_CBC_SHA (rsa 2048) - A
+|       TLS_RSA_WITH_AES_256_GCM_SHA384 (rsa 2048) - A
+|       TLS_RSA_WITH_AES_256_CBC_SHA256 (rsa 2048) - A
+|       TLS_RSA_WITH_AES_256_CBC_SHA (rsa 2048) - A
+|     compressors: 
+|       NULL
+|     cipher preference: server
+|_  least strength: A
+| http-headers: 
+|   Accept-Ranges: bytes
+|   Access-Control-Allow-Origin: *
+|   Cache-Control: public, max-age=0
+|   Content-Length: 75055
+|   Content-Type: text/html; charset=UTF-8
+|   Date: Fri, 27 Feb 2026 16:52:22 GMT
+|   Etag: W/"1252f-19c9ffa7248"
+|   Feature-Policy: payment 'self'
+|   Last-Modified: Fri, 27 Feb 2026 16:41:56 GMT
+|   Nel: {"report_to":"heroku-nel","response_headers":["Via"],"max_age":3600,"success_fraction":0.01,"failure_fraction":0.1}
+|   Report-To: {"group":"heroku-nel","endpoints":[{"url":"https://nel.heroku.com/reports?s=w76RpP4kYcUWTDewV%2F%2FlmoUqZpgkemPEC5TuXpQ2RXE%3D\u0026sid=812dcc77-0bd0-43b1-a5f1-b25750382959\u0026ts=1772211142"}],"max_age":3600}
+|   Reporting-Endpoints: heroku-nel="https://nel.heroku.com/reports?s=w76RpP4kYcUWTDewV%2F%2FlmoUqZpgkemPEC5TuXpQ2RXE%3D&sid=812dcc77-0bd0-43b1-a5f1-b25750382959&ts=1772211142"
+|   Server: Heroku
+|   Vary: Accept-Encoding
+|   Via: 1.1 heroku-router
+|   X-Content-Type-Options: nosniff
+|   X-Frame-Options: SAMEORIGIN
+|   X-Recruiting: /#/jobs
+|   Connection: close
+|   
+|_  (Request type: HEAD)
+| ssl-cert: Subject: commonName=*.herokuapp.com
+| Subject Alternative Name: DNS:*.herokuapp.com
+| Issuer: commonName=Amazon RSA 2048 M01/organizationName=Amazon/countryName=US
+| Public Key type: rsa
+| Public Key bits: 2048
+| Signature Algorithm: sha256WithRSAEncryption
+| Not valid before: 2026-01-01T00:00:00
+| Not valid after:  2027-01-29T23:59:59
+| MD5:   03ab:c2b2:9eb3:6a9a:5592:f4ff:b083:d957
+|_SHA-1: d586:cae6:bbc8:c0c3:eb2b:c8c0:769a:970c:c99e:b545
+| http-methods: 
+|_  Supported Methods: GET HEAD OPTIONS
+| http-server-header: 
+|   Heroku
+|_  heroku-router
+| fingerprint-strings: 
+|   FourOhFourRequest: 
+|     HTTP/1.0 400 Bad Request
+|     Cache-Control: no-cache, no-store
+|     Content-Type: text/html; charset=utf-8
+|     Date: 2026-02-27 16:49:51.247609739 +0000 UTC
+|     Server: heroku-router
+|     Content-Length: 0
+|   GetRequest: 
+|     HTTP/1.0 400 Bad Request
+|     Cache-Control: no-cache, no-store
+|     Content-Type: text/html; charset=utf-8
+|     Date: 2026-02-27 16:49:45.866633701 +0000 UTC
+|     Server: heroku-router
+|     Content-Length: 0
+|   HTTPOptions: 
+|     HTTP/1.0 400 Bad Request
+|     Cache-Control: no-cache, no-store
+|     Content-Type: text/html; charset=utf-8
+|     Date: 2026-02-27 16:49:48.557660316 +0000 UTC
+|     Server: heroku-router
+|_    Content-Length: 0
+2 services unrecognized despite returning data. If you know the service/version, please submit the following fingerprints at https://nmap.org/cgi-bin/submit.cgi?new-service :
+==============NEXT SERVICE FINGERPRINT (SUBMIT INDIVIDUALLY)==============
+SF-Port80-TCP:V=7.95%I=7%D=2/27%Time=69A1CB23%P=x86_64-pc-linux-gnu%r(GetR
+SF:equest,C0,"HTTP/1\.0\x20400\x20Bad\x20Request\r\nCache-Control:\x20no-c
+SF:ache,\x20no-store\r\nContent-Type:\x20text/html;\x20charset=utf-8\r\nDa
+SF:te:\x202026-02-27\x2016:49:39\.158550556\x20\+0000\x20UTC\r\nServer:\x2
+SF:0heroku-router\r\nContent-Length:\x200\r\n\r\n")%r(HTTPOptions,C0,"HTTP
+SF:/1\.0\x20400\x20Bad\x20Request\r\nCache-Control:\x20no-cache,\x20no-sto
+SF:re\r\nContent-Type:\x20text/html;\x20charset=utf-8\r\nDate:\x202026-02-
+SF:27\x2016:49:39\.550204268\x20\+0000\x20UTC\r\nServer:\x20heroku-router\
+SF:r\nContent-Length:\x200\r\n\r\n");
+==============NEXT SERVICE FINGERPRINT (SUBMIT INDIVIDUALLY)==============
+SF-Port443-TCP:V=7.95%T=SSL%I=7%D=2/27%Time=69A1CB2B%P=x86_64-pc-linux-gnu
+SF:%r(GetRequest,C0,"HTTP/1\.0\x20400\x20Bad\x20Request\r\nCache-Control:\
+SF:x20no-cache,\x20no-store\r\nContent-Type:\x20text/html;\x20charset=utf-
+SF:8\r\nDate:\x202026-02-27\x2016:49:45\.866633701\x20\+0000\x20UTC\r\nSer
+SF:ver:\x20heroku-router\r\nContent-Length:\x200\r\n\r\n")%r(HTTPOptions,C
+SF:0,"HTTP/1\.0\x20400\x20Bad\x20Request\r\nCache-Control:\x20no-cache,\x2
+SF:0no-store\r\nContent-Type:\x20text/html;\x20charset=utf-8\r\nDate:\x202
+SF:026-02-27\x2016:49:48\.557660316\x20\+0000\x20UTC\r\nServer:\x20heroku-
+SF:router\r\nContent-Length:\x200\r\n\r\n")%r(FourOhFourRequest,C0,"HTTP/1
+SF:\.0\x20400\x20Bad\x20Request\r\nCache-Control:\x20no-cache,\x20no-store
+SF:\r\nContent-Type:\x20text/html;\x20charset=utf-8\r\nDate:\x202026-02-27
+SF:\x2016:49:51\.247609739\x20\+0000\x20UTC\r\nServer:\x20heroku-router\r\
+SF:nContent-Length:\x200\r\n\r\n");
+
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+Nmap done: 1 IP address (1 host up) scanned in 262.73 seconds
+
+# ========================================================
+# End     : Fri Feb 27 16:53:25 UTC 2026
+# Elapsed : 263s
+# Status  : OK in 263s
+# ========================================================

@@ -1,0 +1,1051 @@
+# ========================================================
+# Tool    : 02_testssl
+# Target  : https://juice-shop.herokuapp.com
+# Start   : Fri Feb 27 16:49:02 UTC 2026
+# Timeout : 300s
+# Cmd     : /app/tools/testssl --color 0 --severity LOW --ssl-native --append --logfile /mnt/scan_results/juice-shop_herokuapp_com_20260227_164854/02_testssl.log juice-shop.herokuapp.com:443
+# ========================================================
+
+
+usage of '--ssl-native' is not recommended as it will return incomplete and may even return incorrect results
+
+#####################################################################
+  testssl.sh version 3.3dev from https://testssl.sh/dev/
+
+  This program is free software. Distribution and modification under
+  GPLv2 permitted. USAGE w/o ANY WARRANTY. USE IT AT YOUR OWN RISK!
+
+  Please file bugs @ https://testssl.sh/bugs/
+#####################################################################
+
+  Using OpenSSL 1.0.2-bad (Mar 28 2025)  [~179 ciphers]
+  on 406b3887cf5c:/app/tools/testssl.sh/bin/openssl.Linux.x86_64
+
+## Scan started as: "testssl.sh --color 0 --severity LOW --ssl-native --append --logfile /mnt/scan_results/juice-shop_herokuapp_com_20260227_164854/02_testssl.log juice-shop.herokuapp.com:443"
+## at 406b3887cf5c:/app/tools/testssl.sh/bin/openssl.Linux.x86_64
+## version testssl: 3.3dev  from 
+## version openssl: "1.0.2-bad" from "Fri Mar 28 16:54:51 2025")
+
+Testing all IP addresses (port 443): Testing all IP addresses (port 443): 54.73.53.134 46.137.15.86 54.220.192.176
+54.73.53.134 46.137.15.86 54.220.192.176
+----------------------------------------------------------------------------------------------------------
+
+ Start 2026-02-27 16:49:05        -->> 54.73.53.134:443 (juice-shop.herokuapp.com) <<-- Start 2026-02-27 16:49:05        -->> 54.73.53.134:443 (juice-shop.herokuapp.com) <<--
+
+
+
+ Further IP addresses:    Further IP addresses:   46.137.15.86 54.220.192.176 
+46.137.15.86 54.220.192.176 
+ rDNS (54.73.53.134):     rDNS (54.73.53.134):    ec2-54-73-53-134.eu-west-1.compute.amazonaws.com.ec2-54-73-53-134.eu-west-1.compute.amazonaws.com.
+
+xxd 2024-12-07 by Juergen Weigert et al.
+/app/tools/testssl.sh/testssl.sh: line 12499: printf: missing hex digit for \x
+xxd 2024-12-07 by Juergen Weigert et al.
+xxd 2024-12-07 by Juergen Weigert et al.
+/app/tools/testssl.sh/testssl.sh: line 12499: printf: missing hex digit for \x
+xxd 2024-12-07 by Juergen Weigert et al.
+xxd 2024-12-07 by Juergen Weigert et al.
+/app/tools/testssl.sh/testssl.sh: line 12499: printf: missing hex digit for \x
+xxd 2024-12-07 by Juergen Weigert et al.
+xxd 2024-12-07 by Juergen Weigert et al.
+/app/tools/testssl.sh/testssl.sh: line 12499: printf: missing hex digit for \x
+xxd 2024-12-07 by Juergen Weigert et al.
+xxd 2024-12-07 by Juergen Weigert et al.
+/app/tools/testssl.sh/testssl.sh: line 12499: printf: missing hex digit for \x
+xxd 2024-12-07 by Juergen Weigert et al.
+xxd 2024-12-07 by Juergen Weigert et al.
+/app/tools/testssl.sh/testssl.sh: line 12499: printf: missing hex digit for \x
+xxd 2024-12-07 by Juergen Weigert et al.
+xxd 2024-12-07 by Juergen Weigert et al.
+xxd 2024-12-07 by Juergen Weigert et al.
+/app/tools/testssl.sh/testssl.sh: line 12499: printf: missing hex digit for \x
+xxd 2024-12-07 by Juergen Weigert et al.
+xxd 2024-12-07 by Juergen Weigert et al.
+ Service detected:       Service detected:       HTTP HTTP
+
+xxd 2024-12-07 by Juergen Weigert et al.
+/app/tools/testssl.sh/testssl.sh: line 12499: printf: missing hex digit for \x
+xxd 2024-12-07 by Juergen Weigert et al.
+ Pre-test:  Pre-test: 128 cipher limit bug128 cipher limit bug
+
+
+
+ Testing protocols  Testing protocols via native opensslvia native openssl
+
+
+
+ SSLv2       SSLv2      not offered (OK)not offered (OK)
+
+ SSLv3       SSLv3      not offered (OK)not offered (OK)
+
+ TLS 1       TLS 1      not offerednot offered
+
+ TLS 1.1     TLS 1.1    not offerednot offered
+
+ TLS 1.2     TLS 1.2    offered (OK)offered (OK)
+
+ TLS 1.3     TLS 1.3    Local problem: /app/tools/testssl.sh/bin/openssl.Linux.x86_64 doesn't support "s_client -tls1_3"Local problem: /app/tools/testssl.sh/bin/openssl.Linux.x86_64 doesn't support "s_client -tls1_3"
+
+ QUIC        QUIC       not offered or timed out
+not offered or timed out
+ NPN/SPDY    NPN/SPDY   not offered
+not offered
+ ALPN/HTTP2  ALPN/HTTP2 not offered
+not offered
+
+
+ Testing cipher categories  Testing cipher categories 
+
+
+
+ NULL ciphers (no encryption)                       NULL ciphers (no encryption)                      not offered (OK)not offered (OK)
+
+ Anonymous NULL Ciphers (no authentication)         Anonymous NULL Ciphers (no authentication)        not offered (OK)not offered (OK)
+
+ Export ciphers (w/o ADH+NULL)                      Export ciphers (w/o ADH+NULL)                     not offered (OK)not offered (OK)
+
+ LOW: 64 Bit + DES, RC[2,4], MD5 (w/o export)       LOW: 64 Bit + DES, RC[2,4], MD5 (w/o export)      not offered (OK)not offered (OK)
+
+ Triple DES Ciphers / IDEA                          Triple DES Ciphers / IDEA                         not offerednot offered
+
+ Obsoleted CBC ciphers (AES, ARIA etc.)             Obsoleted CBC ciphers (AES, ARIA etc.)            offeredoffered
+
+ Strong encryption (AEAD ciphers) with no FS        Strong encryption (AEAD ciphers) with no FS       offered (OK)offered (OK)
+
+ Forward Secrecy strong encryption (AEAD ciphers)   Forward Secrecy strong encryption (AEAD ciphers)  offered (OK)offered (OK)
+
+
+
+
+
+ Testing server's cipher preferences  Testing server's cipher preferences 
+
+
+
+Hexcode  Cipher Suite Name (OpenSSL)       KeyExch.   Encryption  BitsHexcode  Cipher Suite Name (OpenSSL)       KeyExch.   Encryption  Bits     Cipher Suite Name (IANA/RFC)     Cipher Suite Name (IANA/RFC)
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+SSLv2SSLv2
+ - 
+
+ - 
+SSLv3SSLv3
+ - 
+
+ - 
+TLSv1TLSv1
+ - 
+
+ - 
+TLSv1.1TLSv1.1
+ - 
+
+ - 
+TLSv1.2TLSv1.2 (server order)
+ (server order)
+ xc02f   ECDHE-RSA-AES128-GCM-SHA256        xc02f   ECDHE-RSA-AES128-GCM-SHA256       ECDHECDH 256 256     AESGCM      128       AESGCM      128      TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256              TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256              
+
+ xc027   ECDHE-RSA-AES128-SHA256            xc027   ECDHE-RSA-AES128-SHA256           ECDHECDH 256 256     AES         128       AES         128      TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA256              TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA256              
+
+ xc013   ECDHE-RSA-AES128-SHA               xc013   ECDHE-RSA-AES128-SHA              ECDHECDH 256 256     AES         128       AES         128      TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA                 TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA                 
+
+ xc030   ECDHE-RSA-AES256-GCM-SHA384        xc030   ECDHE-RSA-AES256-GCM-SHA384       ECDHECDH 256 256     AESGCM      256       AESGCM      256      TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384              TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384              
+
+ xc028   ECDHE-RSA-AES256-SHA384            xc028   ECDHE-RSA-AES256-SHA384           ECDHECDH 256 256     AES         256       AES         256      TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA384              TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA384              
+
+ xc014   ECDHE-RSA-AES256-SHA               xc014   ECDHE-RSA-AES256-SHA              ECDHECDH 256 256     AES         256       AES         256      TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA                 TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA                 
+
+ x9c     AES128-GCM-SHA256                  x9c     AES128-GCM-SHA256                 RSARSA               AESGCM      128       AESGCM      128      TLS_RSA_WITH_AES_128_GCM_SHA256                    TLS_RSA_WITH_AES_128_GCM_SHA256                    
+
+ x3c     AES128-SHA256                      x3c     AES128-SHA256                     RSARSA               AES         128       AES         128      TLS_RSA_WITH_AES_128_CBC_SHA256                    TLS_RSA_WITH_AES_128_CBC_SHA256                    
+
+ x2f     AES128-SHA                         x2f     AES128-SHA                        RSARSA               AES         128       AES         128      TLS_RSA_WITH_AES_128_CBC_SHA                       TLS_RSA_WITH_AES_128_CBC_SHA                       
+
+ x9d     AES256-GCM-SHA384                  x9d     AES256-GCM-SHA384                 RSARSA               AESGCM      256       AESGCM      256      TLS_RSA_WITH_AES_256_GCM_SHA384                    TLS_RSA_WITH_AES_256_GCM_SHA384                    
+
+ x3d     AES256-SHA256                      x3d     AES256-SHA256                     RSARSA               AES         256       AES         256      TLS_RSA_WITH_AES_256_CBC_SHA256                    TLS_RSA_WITH_AES_256_CBC_SHA256                    
+
+ x35     AES256-SHA                         x35     AES256-SHA                        RSARSA               AES         256       AES         256      TLS_RSA_WITH_AES_256_CBC_SHA                       TLS_RSA_WITH_AES_256_CBC_SHA                       
+
+TLSv1.3TLSv1.3
+ - 
+
+ - 
+
+
+ Has server cipher order?      Has server cipher order?     yes (OK)yes (OK)
+
+
+
+
+
+ Testing robust forward secrecy (FS) Testing robust forward secrecy (FS) -- omitting Null Authentication/Encryption, 3DES, RC4  -- omitting Null Authentication/Encryption, 3DES, RC4 
+
+
+
+
+
+ FS is offered (OK)  FS is offered (OK)                     ECDHE-RSA-AES128-GCM-SHA256
+                              ECDHE-RSA-AES128-SHA256 ECDHE-RSA-AES128-SHA
+                              ECDHE-RSA-AES256-GCM-SHA384
+                              ECDHE-RSA-AES256-SHA384 ECDHE-RSA-AES256-SHA ECDHE-RSA-AES128-GCM-SHA256
+                              ECDHE-RSA-AES128-SHA256 ECDHE-RSA-AES128-SHA
+                              ECDHE-RSA-AES256-GCM-SHA384
+                              ECDHE-RSA-AES256-SHA384 ECDHE-RSA-AES256-SHA 
+
+ KEMs offered                  KEMs offered                 NoneNone
+
+ Elliptic curves offered:      Elliptic curves offered:     prime256v1prime256v1  secp384r1secp384r1  secp521r1secp521r1  
+
+
+
+ Testing server defaults (Server Hello)  Testing server defaults (Server Hello) 
+
+
+
+ TLS extensions                TLS extensions               "server name/#0" "EC point formats/#11"
+                              "session ticket/#35" "renegotiation info/#65281"
+"server name/#0" "EC point formats/#11"
+                              "session ticket/#35" "renegotiation info/#65281"
+                                                            No extended master secret extension, violates RFC 9325 & may cause connection problemsNo extended master secret extension, violates RFC 9325 & may cause connection problems
+
+ Session Ticket RFC 5077 hint  Session Ticket RFC 5077 hint 142223 seconds142223 seconds but: FS requires session ticket keys to be rotated < daily ! but: FS requires session ticket keys to be rotated < daily !
+
+ SSL Session ID support        SSL Session ID support       yes
+yes
+ Session Resumption            Session Resumption           tickets: yes, tickets: yes, ID: no
+ID: no
+ TLS 1.3 early data support    TLS 1.3 early data support   not offered, as no TLS 1.3 offered
+not offered, as no TLS 1.3 offered
+ TLS clock skew TLS clock skew                              xxd 2024-12-07 by Juergen Weigert et al.
+/app/tools/testssl.sh/testssl.sh: line 12499: printf: missing hex digit for \x
+xxd 2024-12-07 by Juergen Weigert et al.
+xxd 2024-12-07 by Juergen Weigert et al.
+/app/tools/testssl.sh/testssl.sh: line 12499: printf: missing hex digit for \x
+xxd 2024-12-07 by Juergen Weigert et al.
+xxd 2024-12-07 by Juergen Weigert et al.
+/app/tools/testssl.sh/testssl.sh: line 12499: printf: missing hex digit for \x
+xxd 2024-12-07 by Juergen Weigert et al.
+xxd 2024-12-07 by Juergen Weigert et al.
+SSLv3 through TLS 1.2 didn't return a timestamp
+SSLv3 through TLS 1.2 didn't return a timestamp
+ Client Authentication         Client Authentication        none
+none
+ Signature Algorithm           Signature Algorithm          SHA256 with RSASHA256 with RSA
+
+ Server key size               Server key size              RSA RSA 2048 bits2048 bits (exponent is 65537) (exponent is 65537)
+
+ Server key usage              Server key usage             Digital Signature, Key Encipherment
+Digital Signature, Key Encipherment
+ Server extended key usage     Server extended key usage    TLS Web Server Authentication
+TLS Web Server Authentication
+ Serial                        Serial                       08A1B510A819F1A30C8B83862B215C5908A1B510A819F1A30C8B83862B215C59 (OK: length 16)
+ (OK: length 16)
+ Fingerprints                  Fingerprints                 SHA1 D586CAE6BBC8C0C3EB2BC8C0769A970CC99EB545
+SHA1 D586CAE6BBC8C0C3EB2BC8C0769A970CC99EB545
+                              SHA256 49FE8D59BA2AD5AE6BFA66EDC936A057D5A0D80C089030DF81B9575066CDEE81
+                              SHA256 49FE8D59BA2AD5AE6BFA66EDC936A057D5A0D80C089030DF81B9575066CDEE81
+ Common Name (CN)              Common Name (CN)             *.herokuapp.com *.herokuapp.com 
+
+ subjectAltName (SAN)          subjectAltName (SAN)         *.herokuapp.com *.herokuapp.com 
+
+ Trust (hostname)              Trust (hostname)             Ok via SAN wildcard and CN wildcardOk via SAN wildcard and CN wildcard (same w/o SNI)
+ (same w/o SNI)
+                                                            wildcard certificatewildcard certificate could be problematic, see other hosts at
+ could be problematic, see other hosts at
+                              https://search.censys.io/search?resource=hosts&virtual_hosts=INCLUDE&q=49FE8D59BA2AD5AE6BFA66EDC936A057D5A0D80C089030DF81B9575066CDEE81
+                              https://search.censys.io/search?resource=hosts&virtual_hosts=INCLUDE&q=49FE8D59BA2AD5AE6BFA66EDC936A057D5A0D80C089030DF81B9575066CDEE81
+ Chain of trust Chain of trust                              Ok   Ok   
+
+ EV cert EV cert (experimental)        (experimental)       no no 
+
+ Certificate Validity (UTC)    Certificate Validity (UTC)   336 >= 60 days336 >= 60 days (2026-01-01 00:00 --> 2027-01-29 23:59)
+ (2026-01-01 00:00 --> 2027-01-29 23:59)
+ ETS/"eTLS" ETS/"eTLS", visibility info  , visibility info  not present
+not present
+ Certificate Revocation List   Certificate Revocation List  http://crl.r2m01.amazontrust.com/r2m01.crlhttp://crl.r2m01.amazontrust.com/r2m01.crl
+
+ OCSP URI                      OCSP URI                     http://ocsp.r2m01.amazontrust.comhttp://ocsp.r2m01.amazontrust.com
+
+ OCSP stapling                 OCSP stapling                not offerednot offered
+
+ OCSP must staple extension    OCSP must staple extension   --
+--
+ DNS CAA RR DNS CAA RR (experimental)     (experimental)    not offerednot offered
+
+ Certificate Transparency      Certificate Transparency     yesyes (certificate extension)
+ (certificate extension)
+ Certificates provided Certificates provided        3        3
+
+ Issuer                        Issuer                       Amazon RSA 2048 M01Amazon RSA 2048 M01 ( (AmazonAmazon from  from USUS))
+
+ Intermediate cert validity    Intermediate cert validity   #1: #1: ok > 40 daysok > 40 days (2030-08-23 22:21).  (2030-08-23 22:21). Amazon RSA 2048 M01Amazon RSA 2048 M01 <--  <-- Amazon Root CA 1Amazon Root CA 1
+
+                                                            #2: #2: ok > 40 daysok > 40 days (2037-12-31 01:00).  (2037-12-31 01:00). Amazon Root CA 1Amazon Root CA 1 <--  <-- Starfield Services Root Certificate Authority - G2Starfield Services Root Certificate Authority - G2
+
+ Intermediate Bad OCSP Intermediate Bad OCSP (exp.)  (exp.) OkOk
+
+
+
+
+
+ Testing HTTP header response @ "/"  Testing HTTP header response @ "/" 
+
+
+
+ HTTP Status Code            HTTP Status Code             200 OK  200 OK
+
+ HTTP clock skew               HTTP clock skew              0 sec from localtime0 sec from localtime
+
+ Strict Transport Security     Strict Transport Security    not offerednot offered
+
+ Public Key Pinning            Public Key Pinning           --
+--
+ Server banner                 Server banner                Heroku
+Heroku
+ Application banner            Application banner           --
+--
+ Cookie(s)                     Cookie(s)                    (none issued at "/")
+(none issued at "/")
+ Security headers              Security headers             X-Frame-OptionsX-Frame-Options: SAMEORIGIN
+: SAMEORIGIN
+                                                            X-Content-Type-OptionsX-Content-Type-Options: nosniff
+: nosniff
+                                                            Access-Control-Allow-OriginAccess-Control-Allow-Origin: *
+: *
+                                                            Cache-ControlCache-Control: public, max-age=0
+: public, max-age=0
+ Reverse Proxy banner          Reverse Proxy banner         Via: 1.1 heroku-router
+Via: 1.1 heroku-router
+
+
+
+
+ Testing vulnerabilities  Testing vulnerabilities 
+
+
+
+ Heartbleed Heartbleed (CVE-2014-0160)                 (CVE-2014-0160)                not vulnerable (OK)not vulnerable (OK), no heartbeat extension
+, no heartbeat extension
+ CCS CCS (CVE-2014-0224)                        (CVE-2014-0224)                       xxd 2024-12-07 by Juergen Weigert et al.
+not vulnerable (OK)not vulnerable (OK)
+
+ Ticketbleed Ticketbleed (CVE-2016-9244), experiment.   (CVE-2016-9244), experiment.  xxd 2024-12-07 by Juergen Weigert et al.
+not vulnerable (OK)not vulnerable (OK), reply empty, reply empty
+
+ Opossum Opossum (CVE-2025-49812)                   (CVE-2025-49812)                  not vulnerable (OK)not vulnerable (OK)
+
+ ROBOT                                      ROBOT                                     xxd 2024-12-07 by Juergen Weigert et al.
+/app/tools/testssl.sh/testssl.sh: line 12499: printf: missing hex digit for \x
+xxd 2024-12-07 by Juergen Weigert et al.
+xxd 2024-12-07 by Juergen Weigert et al.
+/app/tools/testssl.sh/testssl.sh: line 12499: printf: missing hex digit for \x
+xxd 2024-12-07 by Juergen Weigert et al.
+Server does not support any cipher suites that use RSA key transportServer does not support any cipher suites that use RSA key transport
+
+ Secure Renegotiation (RFC 5746)            Secure Renegotiation (RFC 5746)           supported (OK)supported (OK)
+
+ Secure Client-Initiated Renegotiation      Secure Client-Initiated Renegotiation     not vulnerable (OK)not vulnerable (OK)
+
+ CRIME, TLS  CRIME, TLS (CVE-2012-4929)                (CVE-2012-4929)                not vulnerable (OK)not vulnerable (OK)
+
+ BREACH BREACH (CVE-2013-3587)                     (CVE-2013-3587)                    potentially NOT ok, "br gzip deflate" HTTP compression detected.potentially NOT ok, "br gzip deflate" HTTP compression detected. - only supplied "/" tested
+ - only supplied "/" tested
+                                           Can be ignored for static pages or if no secrets in the page
+                                           Can be ignored for static pages or if no secrets in the page
+ POODLE, SSL POODLE, SSL (CVE-2014-3566)                (CVE-2014-3566)               not vulnerable (OK)not vulnerable (OK), no SSLv3 support
+, no SSLv3 support
+ TLS_FALLBACK_SCSV TLS_FALLBACK_SCSV (RFC 7507)               (RFC 7507)              No fallback possible (OK)No fallback possible (OK), no protocol below TLS 1.2 offered
+, no protocol below TLS 1.2 offered
+ SWEET32 SWEET32 (CVE-2016-2183, CVE-2016-6329)     (CVE-2016-2183, CVE-2016-6329)    not vulnerable (OK)not vulnerable (OK), 38/53 (SSLv2: 8/8) local ciphers, 38/53 (SSLv2: 8/8) local ciphers
+
+ FREAK FREAK (CVE-2015-0204)                      (CVE-2015-0204)                     not vulnerable (OK)not vulnerable (OK)
+
+ DROWN DROWN (CVE-2016-0800, CVE-2016-0703)       (CVE-2016-0800, CVE-2016-0703)      not vulnerable on this host and port (OK)not vulnerable on this host and port (OK)
+
+                                           make sure you don't use this certificate elsewhere with SSLv2 enabled services, see
+                                           make sure you don't use this certificate elsewhere with SSLv2 enabled services, see
+                                                                                      https://search.censys.io/search?resource=hosts&virtual_hosts=INCLUDE&q=49FE8D59BA2AD5AE6BFA66EDC936A057D5A0D80C089030DF81B9575066CDEE81https://search.censys.io/search?resource=hosts&virtual_hosts=INCLUDE&q=49FE8D59BA2AD5AE6BFA66EDC936A057D5A0D80C089030DF81B9575066CDEE81
+
+ LOGJAM LOGJAM (CVE-2015-4000), experimental       (CVE-2015-4000), experimental      not vulnerable (OK):not vulnerable (OK): no DH EXPORT ciphers no DH EXPORT ciphers, no DH key detected with <= TLS 1.2, no DH key detected with <= TLS 1.2
+
+ BEAST BEAST (CVE-2011-3389)                      (CVE-2011-3389)                     not vulnerable (OK)not vulnerable (OK), no SSL3 or TLS1
+, no SSL3 or TLS1
+ LUCKY13 LUCKY13 (CVE-2013-0169), experimental      (CVE-2013-0169), experimental     potentially potentially VULNERABLEVULNERABLE, uses cipher block chaining (CBC) ciphers with TLS. Check patches, uses cipher block chaining (CBC) ciphers with TLS. Check patches
+
+ Winshock Winshock (CVE-2014-6321), experimental     (CVE-2014-6321), experimental    xxd 2024-12-07 by Juergen Weigert et al.
+/app/tools/testssl.sh/testssl.sh: line 12499: printf: missing hex digit for \x
+xxd 2024-12-07 by Juergen Weigert et al.
+xxd 2024-12-07 by Juergen Weigert et al.
+/app/tools/testssl.sh/testssl.sh: line 12499: printf: missing hex digit for \x
+xxd 2024-12-07 by Juergen Weigert et al.
+xxd 2024-12-07 by Juergen Weigert et al.
+/app/tools/testssl.sh/testssl.sh: line 12499: printf: missing hex digit for \x
+xxd 2024-12-07 by Juergen Weigert et al.
+not vulnerable (OK)not vulnerable (OK) - doesn't seem to be IIS 8.x
+ - doesn't seem to be IIS 8.x
+ RC4 RC4 (CVE-2013-2566, CVE-2015-2808)         (CVE-2013-2566, CVE-2015-2808)        no RC4 ciphers detected (OK)no RC4 ciphers detected (OK)
+
+
+
+
+
+ Running client simulations  Running client simulations (HTTP) (HTTP) via openssl via openssl  -- pls note "--ssl-native" will return some false results -- pls note "--ssl-native" will return some false results
+
+
+
+ Browser                      Protocol  Cipher Suite Name (OpenSSL)        Browser                      Protocol  Cipher Suite Name (OpenSSL)       Forward SecrecyForward Secrecy
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+ Android 7.0 (native)          Android 7.0 (native)         TLSv1.2   TLSv1.2   ECDHE-RSA-AES128-GCM-SHA256ECDHE-RSA-AES128-GCM-SHA256              256 bit ECDH (P-256)256 bit ECDH (P-256)
+
+ Android 8.1 (native)          Android 8.1 (native)         TLSv1.2   TLSv1.2   ECDHE-RSA-AES128-GCM-SHA256ECDHE-RSA-AES128-GCM-SHA256              256 bit ECDH (P-256)256 bit ECDH (P-256)
+
+ Android 9.0 (native)          Android 9.0 (native)         Local problem: TLS 1.3 not supported, Local problem: TLS 1.3 not supported, No connection
+No connection
+ Android 10.0 (native)         Android 10.0 (native)        Local problem: TLS 1.3 not supported, Local problem: TLS 1.3 not supported, No connection
+No connection
+ Android 11/12 (native)        Android 11/12 (native)       Local problem: TLS 1.3 not supported, Local problem: TLS 1.3 not supported, No connection
+No connection
+ Android 13/14 (native)        Android 13/14 (native)       Local problem: TLS 1.3 not supported, Local problem: TLS 1.3 not supported, No connection
+No connection
+ Android 15 (native)           Android 15 (native)          Local problem: TLS 1.3 not supported, Local problem: TLS 1.3 not supported, No connection
+No connection
+ Chrome 101 (Win 10)           Chrome 101 (Win 10)          Local problem: TLS 1.3 not supported, Local problem: TLS 1.3 not supported, No connection
+No connection
+ Chromium 137 (Win 11)         Chromium 137 (Win 11)        Local problem: TLS 1.3 not supported, Local problem: TLS 1.3 not supported, No connection
+No connection
+ Firefox 100 (Win 10)          Firefox 100 (Win 10)         Local problem: TLS 1.3 not supported, Local problem: TLS 1.3 not supported, No connection
+No connection
+ Firefox 137 (Win 11)          Firefox 137 (Win 11)         Local problem: TLS 1.3 not supported, Local problem: TLS 1.3 not supported, No connection
+No connection
+ IE 8 Win 7                    IE 8 Win 7                   No connection
+No connection
+ IE 11 Win 7                   IE 11 Win 7                  TLSv1.2   TLSv1.2   ECDHE-RSA-AES128-SHA256ECDHE-RSA-AES128-SHA256                      256 bit ECDH (P-256)256 bit ECDH (P-256)
+
+ IE 11 Win 8.1                 IE 11 Win 8.1                TLSv1.2   TLSv1.2   ECDHE-RSA-AES128-SHA256ECDHE-RSA-AES128-SHA256                      256 bit ECDH (P-256)256 bit ECDH (P-256)
+
+ IE 11 Win Phone 8.1           IE 11 Win Phone 8.1          TLSv1.2   TLSv1.2   ECDHE-RSA-AES128-SHA256ECDHE-RSA-AES128-SHA256                      256 bit ECDH (P-256)256 bit ECDH (P-256)
+
+ IE 11 Win 10                  IE 11 Win 10                 TLSv1.2   TLSv1.2   ECDHE-RSA-AES128-GCM-SHA256ECDHE-RSA-AES128-GCM-SHA256              256 bit ECDH (P-256)256 bit ECDH (P-256)
+
+ Edge 15 Win 10                Edge 15 Win 10               TLSv1.2   TLSv1.2   ECDHE-RSA-AES128-GCM-SHA256ECDHE-RSA-AES128-GCM-SHA256              256 bit ECDH (P-256)256 bit ECDH (P-256)
+
+ Edge 101 Win 10 21H2          Edge 101 Win 10 21H2         Local problem: TLS 1.3 not supported, Local problem: TLS 1.3 not supported, No connection
+No connection
+ Edge 133 Win 11 23H2          Edge 133 Win 11 23H2         Local problem: TLS 1.3 not supported, Local problem: TLS 1.3 not supported, No connection
+No connection
+ Safari 18.4 (iOS 18.4)        Safari 18.4 (iOS 18.4)       Local problem: TLS 1.3 not supported, Local problem: TLS 1.3 not supported, No connection
+No connection
+ Safari 15.4 (macOS 12.3.1)    Safari 15.4 (macOS 12.3.1)   Local problem: TLS 1.3 not supported, Local problem: TLS 1.3 not supported, No connection
+No connection
+ Safari 18.4 (macOS 15.4)      Safari 18.4 (macOS 15.4)     Local problem: TLS 1.3 not supported, Local problem: TLS 1.3 not supported, No connection
+No connection
+ Java 7u25                     Java 7u25                    No connection
+No connection
+ Java 8u442 (OpenJDK)          Java 8u442 (OpenJDK)         Local problem: TLS 1.3 not supported, Local problem: TLS 1.3 not supported, No connection
+No connection
+ Java 11.0.2 (OpenJDK)         Java 11.0.2 (OpenJDK)        Local problem: TLS 1.3 not supported, Local problem: TLS 1.3 not supported, No connection
+No connection
+ Java 17.0.3 (OpenJDK)         Java 17.0.3 (OpenJDK)        Local problem: TLS 1.3 not supported, Local problem: TLS 1.3 not supported, No connection
+No connection
+ Java 21.0.6 (OpenJDK)         Java 21.0.6 (OpenJDK)        Local problem: TLS 1.3 not supported, Local problem: TLS 1.3 not supported, No connection
+No connection
+ go 1.17.8                     go 1.17.8                    Local problem: TLS 1.3 not supported, Local problem: TLS 1.3 not supported, No connection
+No connection
+ LibreSSL 3.3.6 (macOS)        LibreSSL 3.3.6 (macOS)       Local problem: TLS 1.3 not supported, Local problem: TLS 1.3 not supported, No connection
+No connection
+ OpenSSL 1.0.2e                OpenSSL 1.0.2e               TLSv1.2   TLSv1.2   ECDHE-RSA-AES128-GCM-SHA256ECDHE-RSA-AES128-GCM-SHA256              256 bit ECDH (P-256)256 bit ECDH (P-256)
+
+ OpenSSL 1.1.1d (Debian)       OpenSSL 1.1.1d (Debian)      Local problem: TLS 1.3 not supported, Local problem: TLS 1.3 not supported, No connection
+No connection
+ OpenSSL 3.0.15 (Debian)       OpenSSL 3.0.15 (Debian)      Local problem: TLS 1.3 not supported, Local problem: TLS 1.3 not supported, No connection
+No connection
+ OpenSSL 3.5.0 (git)           OpenSSL 3.5.0 (git)          Local problem: TLS 1.3 not supported, Local problem: TLS 1.3 not supported, No connection
+No connection
+ Apple Mail (16.0)             Apple Mail (16.0)            TLSv1.2   TLSv1.2   ECDHE-RSA-AES128-GCM-SHA256ECDHE-RSA-AES128-GCM-SHA256              256 bit ECDH (P-256)256 bit ECDH (P-256)
+
+ Thunderbird (91.9)            Thunderbird (91.9)           Local problem: TLS 1.3 not supported, Local problem: TLS 1.3 not supported, No connection
+No connection
+
+
+
+
+ Rating (experimental)  Rating (experimental) 
+
+
+
+ Rating specs Rating specs (not complete)   (not complete)  SSL Labs's 'SSL Server Rating Guide' (version 2009r from 2025-05-16)
+SSL Labs's 'SSL Server Rating Guide' (version 2009r from 2025-05-16)
+ Specification documentation   Specification documentation  https://github.com/ssllabs/research/wiki/SSL-Server-Rating-Guidehttps://github.com/ssllabs/research/wiki/SSL-Server-Rating-Guide
+
+ Protocol Support  Protocol Support (weighted)  (weighted)  100 (30)
+100 (30)
+ Key Exchange  Key Exchange     (weighted)      (weighted)  90 (27)
+90 (27)
+ Cipher Strength  Cipher Strength  (weighted)   (weighted)  90 (36)
+90 (36)
+ Final Score                   Final Score                  93
+93
+ Overall Grade                 Overall Grade                A-A-
+
+ Grade warning                 Grade warning                TLS 1.3 is not supportedTLS 1.3 is not supported
+
+
+
+ Done 2026-02-27 16:50:37 [  95s] -->> 54.73.53.134:443 (juice-shop.herokuapp.com) <<-- Done 2026-02-27 16:50:37 [  95s] -->> 54.73.53.134:443 (juice-shop.herokuapp.com) <<--
+
+
+
+----------------------------------------------------------------------------------------------------------
+
+ Start 2026-02-27 16:50:37        -->> 46.137.15.86:443 (juice-shop.herokuapp.com) <<-- Start 2026-02-27 16:50:37        -->> 46.137.15.86:443 (juice-shop.herokuapp.com) <<--
+
+
+
+ Further IP addresses:    Further IP addresses:   54.73.53.134 54.220.192.176 
+54.73.53.134 54.220.192.176 
+ rDNS (46.137.15.86):     rDNS (46.137.15.86):    ec2-46-137-15-86.eu-west-1.compute.amazonaws.com.ec2-46-137-15-86.eu-west-1.compute.amazonaws.com.
+
+xxd 2024-12-07 by Juergen Weigert et al.
+/app/tools/testssl.sh/testssl.sh: line 12499: printf: missing hex digit for \x
+xxd 2024-12-07 by Juergen Weigert et al.
+xxd 2024-12-07 by Juergen Weigert et al.
+/app/tools/testssl.sh/testssl.sh: line 12499: printf: missing hex digit for \x
+xxd 2024-12-07 by Juergen Weigert et al.
+xxd 2024-12-07 by Juergen Weigert et al.
+/app/tools/testssl.sh/testssl.sh: line 12499: printf: missing hex digit for \x
+xxd 2024-12-07 by Juergen Weigert et al.
+xxd 2024-12-07 by Juergen Weigert et al.
+/app/tools/testssl.sh/testssl.sh: line 12499: printf: missing hex digit for \x
+xxd 2024-12-07 by Juergen Weigert et al.
+xxd 2024-12-07 by Juergen Weigert et al.
+/app/tools/testssl.sh/testssl.sh: line 12499: printf: missing hex digit for \x
+xxd 2024-12-07 by Juergen Weigert et al.
+xxd 2024-12-07 by Juergen Weigert et al.
+/app/tools/testssl.sh/testssl.sh: line 12499: printf: missing hex digit for \x
+xxd 2024-12-07 by Juergen Weigert et al.
+xxd 2024-12-07 by Juergen Weigert et al.
+xxd 2024-12-07 by Juergen Weigert et al.
+/app/tools/testssl.sh/testssl.sh: line 12499: printf: missing hex digit for \x
+xxd 2024-12-07 by Juergen Weigert et al.
+xxd 2024-12-07 by Juergen Weigert et al.
+ Service detected:       Service detected:       HTTP HTTP
+
+xxd 2024-12-07 by Juergen Weigert et al.
+/app/tools/testssl.sh/testssl.sh: line 12499: printf: missing hex digit for \x
+xxd 2024-12-07 by Juergen Weigert et al.
+ Pre-test:  Pre-test: 128 cipher limit bug128 cipher limit bug
+
+
+
+ Testing protocols  Testing protocols via native opensslvia native openssl
+
+
+
+ SSLv2       SSLv2      not offered (OK)not offered (OK)
+
+ SSLv3       SSLv3      not offered (OK)not offered (OK)
+
+ TLS 1       TLS 1      not offerednot offered
+
+ TLS 1.1     TLS 1.1    not offerednot offered
+
+ TLS 1.2     TLS 1.2    offered (OK)offered (OK)
+
+ TLS 1.3     TLS 1.3    Local problem: /app/tools/testssl.sh/bin/openssl.Linux.x86_64 doesn't support "s_client -tls1_3"Local problem: /app/tools/testssl.sh/bin/openssl.Linux.x86_64 doesn't support "s_client -tls1_3"
+
+ QUIC        QUIC       not offered or timed out
+not offered or timed out
+ NPN/SPDY    NPN/SPDY   not offered
+not offered
+ ALPN/HTTP2  ALPN/HTTP2 not offered
+not offered
+
+
+ Testing cipher categories  Testing cipher categories 
+
+
+
+ NULL ciphers (no encryption)                       NULL ciphers (no encryption)                      not offered (OK)not offered (OK)
+
+ Anonymous NULL Ciphers (no authentication)         Anonymous NULL Ciphers (no authentication)        not offered (OK)not offered (OK)
+
+ Export ciphers (w/o ADH+NULL)                      Export ciphers (w/o ADH+NULL)                     not offered (OK)not offered (OK)
+
+ LOW: 64 Bit + DES, RC[2,4], MD5 (w/o export)       LOW: 64 Bit + DES, RC[2,4], MD5 (w/o export)      not offered (OK)not offered (OK)
+
+ Triple DES Ciphers / IDEA                          Triple DES Ciphers / IDEA                         not offerednot offered
+
+ Obsoleted CBC ciphers (AES, ARIA etc.)             Obsoleted CBC ciphers (AES, ARIA etc.)            offeredoffered
+
+ Strong encryption (AEAD ciphers) with no FS        Strong encryption (AEAD ciphers) with no FS       offered (OK)offered (OK)
+
+ Forward Secrecy strong encryption (AEAD ciphers)   Forward Secrecy strong encryption (AEAD ciphers)  offered (OK)offered (OK)
+
+
+
+
+
+ Testing server's cipher preferences  Testing server's cipher preferences 
+
+
+
+Hexcode  Cipher Suite Name (OpenSSL)       KeyExch.   Encryption  BitsHexcode  Cipher Suite Name (OpenSSL)       KeyExch.   Encryption  Bits     Cipher Suite Name (IANA/RFC)     Cipher Suite Name (IANA/RFC)
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+SSLv2SSLv2
+ - 
+
+ - 
+SSLv3SSLv3
+ - 
+
+ - 
+TLSv1TLSv1
+ - 
+
+ - 
+TLSv1.1TLSv1.1
+ - 
+
+ - 
+TLSv1.2TLSv1.2 (server order)
+ (server order)
+ xc02f   ECDHE-RSA-AES128-GCM-SHA256        xc02f   ECDHE-RSA-AES128-GCM-SHA256       ECDHECDH 256 256     AESGCM      128       AESGCM      128      TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256              TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256              
+
+ xc027   ECDHE-RSA-AES128-SHA256            xc027   ECDHE-RSA-AES128-SHA256           ECDHECDH 256 256     AES         128       AES         128      TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA256              TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA256              
+
+ xc013   ECDHE-RSA-AES128-SHA               xc013   ECDHE-RSA-AES128-SHA              ECDHECDH 256 256     AES         128       AES         128      TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA                 TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA                 
+
+ xc030   ECDHE-RSA-AES256-GCM-SHA384        xc030   ECDHE-RSA-AES256-GCM-SHA384       ECDHECDH 256 256     AESGCM      256       AESGCM      256      TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384              TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384              
+
+ xc028   ECDHE-RSA-AES256-SHA384            xc028   ECDHE-RSA-AES256-SHA384           ECDHECDH 256 256     AES         256       AES         256      TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA384              TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA384              
+
+ xc014   ECDHE-RSA-AES256-SHA               xc014   ECDHE-RSA-AES256-SHA              ECDHECDH 256 256     AES         256       AES         256      TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA                 TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA                 
+
+ x9c     AES128-GCM-SHA256                  x9c     AES128-GCM-SHA256                 RSARSA               AESGCM      128       AESGCM      128      TLS_RSA_WITH_AES_128_GCM_SHA256                    TLS_RSA_WITH_AES_128_GCM_SHA256                    
+
+ x3c     AES128-SHA256                      x3c     AES128-SHA256                     RSARSA               AES         128       AES         128      TLS_RSA_WITH_AES_128_CBC_SHA256                    TLS_RSA_WITH_AES_128_CBC_SHA256                    
+
+ x2f     AES128-SHA                         x2f     AES128-SHA                        RSARSA               AES         128       AES         128      TLS_RSA_WITH_AES_128_CBC_SHA                       TLS_RSA_WITH_AES_128_CBC_SHA                       
+
+ x9d     AES256-GCM-SHA384                  x9d     AES256-GCM-SHA384                 RSARSA               AESGCM      256       AESGCM      256      TLS_RSA_WITH_AES_256_GCM_SHA384                    TLS_RSA_WITH_AES_256_GCM_SHA384                    
+
+ x3d     AES256-SHA256                      x3d     AES256-SHA256                     RSARSA               AES         256       AES         256      TLS_RSA_WITH_AES_256_CBC_SHA256                    TLS_RSA_WITH_AES_256_CBC_SHA256                    
+
+ x35     AES256-SHA                         x35     AES256-SHA                        RSARSA               AES         256       AES         256      TLS_RSA_WITH_AES_256_CBC_SHA                       TLS_RSA_WITH_AES_256_CBC_SHA                       
+
+TLSv1.3TLSv1.3
+ - 
+
+ - 
+
+
+ Has server cipher order?      Has server cipher order?     yes (OK)yes (OK)
+
+
+
+
+
+ Testing robust forward secrecy (FS) Testing robust forward secrecy (FS) -- omitting Null Authentication/Encryption, 3DES, RC4  -- omitting Null Authentication/Encryption, 3DES, RC4 
+
+
+
+
+
+ FS is offered (OK)  FS is offered (OK)                     ECDHE-RSA-AES128-GCM-SHA256
+                              ECDHE-RSA-AES128-SHA256 ECDHE-RSA-AES128-SHA
+                              ECDHE-RSA-AES256-GCM-SHA384
+                              ECDHE-RSA-AES256-SHA384 ECDHE-RSA-AES256-SHA ECDHE-RSA-AES128-GCM-SHA256
+                              ECDHE-RSA-AES128-SHA256 ECDHE-RSA-AES128-SHA
+                              ECDHE-RSA-AES256-GCM-SHA384
+                              ECDHE-RSA-AES256-SHA384 ECDHE-RSA-AES256-SHA 
+
+ KEMs offered                  KEMs offered                 NoneNone
+
+ Elliptic curves offered:      Elliptic curves offered:     prime256v1prime256v1  secp384r1secp384r1  secp521r1secp521r1  
+
+
+
+ Testing server defaults (Server Hello)  Testing server defaults (Server Hello) 
+
+
+
+ TLS extensions                TLS extensions               "server name/#0" "EC point formats/#11"
+                              "session ticket/#35" "renegotiation info/#65281"
+"server name/#0" "EC point formats/#11"
+                              "session ticket/#35" "renegotiation info/#65281"
+                                                            No extended master secret extension, violates RFC 9325 & may cause connection problemsNo extended master secret extension, violates RFC 9325 & may cause connection problems
+
+ Session Ticket RFC 5077 hint  Session Ticket RFC 5077 hint 142128 seconds142128 seconds but: FS requires session ticket keys to be rotated < daily ! but: FS requires session ticket keys to be rotated < daily !
+
+ SSL Session ID support        SSL Session ID support       yes
+yes
+ Session Resumption            Session Resumption           tickets: yes, tickets: yes, ID: no
+ID: no
+ TLS 1.3 early data support    TLS 1.3 early data support   not offered, as no TLS 1.3 offered
+not offered, as no TLS 1.3 offered
+ TLS clock skew TLS clock skew                              xxd 2024-12-07 by Juergen Weigert et al.
+/app/tools/testssl.sh/testssl.sh: line 12499: printf: missing hex digit for \x
+xxd 2024-12-07 by Juergen Weigert et al.
+xxd 2024-12-07 by Juergen Weigert et al.
+/app/tools/testssl.sh/testssl.sh: line 12499: printf: missing hex digit for \x
+xxd 2024-12-07 by Juergen Weigert et al.
+xxd 2024-12-07 by Juergen Weigert et al.
+/app/tools/testssl.sh/testssl.sh: line 12499: printf: missing hex digit for \x
+xxd 2024-12-07 by Juergen Weigert et al.
+xxd 2024-12-07 by Juergen Weigert et al.
+SSLv3 through TLS 1.2 didn't return a timestamp
+SSLv3 through TLS 1.2 didn't return a timestamp
+ Client Authentication         Client Authentication        none
+none
+ Signature Algorithm           Signature Algorithm          SHA256 with RSASHA256 with RSA
+
+ Server key size               Server key size              RSA RSA 2048 bits2048 bits (exponent is 65537) (exponent is 65537)
+
+ Server key usage              Server key usage             Digital Signature, Key Encipherment
+Digital Signature, Key Encipherment
+ Server extended key usage     Server extended key usage    TLS Web Server Authentication
+TLS Web Server Authentication
+ Serial                        Serial                       08A1B510A819F1A30C8B83862B215C5908A1B510A819F1A30C8B83862B215C59 (OK: length 16)
+ (OK: length 16)
+ Fingerprints                  Fingerprints                 SHA1 D586CAE6BBC8C0C3EB2BC8C0769A970CC99EB545
+SHA1 D586CAE6BBC8C0C3EB2BC8C0769A970CC99EB545
+                              SHA256 49FE8D59BA2AD5AE6BFA66EDC936A057D5A0D80C089030DF81B9575066CDEE81
+                              SHA256 49FE8D59BA2AD5AE6BFA66EDC936A057D5A0D80C089030DF81B9575066CDEE81
+ Common Name (CN)              Common Name (CN)             *.herokuapp.com *.herokuapp.com 
+
+ subjectAltName (SAN)          subjectAltName (SAN)         *.herokuapp.com *.herokuapp.com 
+
+ Trust (hostname)              Trust (hostname)             Ok via SAN wildcard and CN wildcardOk via SAN wildcard and CN wildcard (same w/o SNI)
+ (same w/o SNI)
+                                                            wildcard certificatewildcard certificate could be problematic, see other hosts at
+ could be problematic, see other hosts at
+                              https://search.censys.io/search?resource=hosts&virtual_hosts=INCLUDE&q=49FE8D59BA2AD5AE6BFA66EDC936A057D5A0D80C089030DF81B9575066CDEE81
+                              https://search.censys.io/search?resource=hosts&virtual_hosts=INCLUDE&q=49FE8D59BA2AD5AE6BFA66EDC936A057D5A0D80C089030DF81B9575066CDEE81
+ Chain of trust Chain of trust                              Ok   Ok   
+
+ EV cert EV cert (experimental)        (experimental)       no no 
+
+ Certificate Validity (UTC)    Certificate Validity (UTC)   336 >= 60 days336 >= 60 days (2026-01-01 00:00 --> 2027-01-29 23:59)
+ (2026-01-01 00:00 --> 2027-01-29 23:59)
+ ETS/"eTLS" ETS/"eTLS", visibility info  , visibility info  not present
+not present
+ Certificate Revocation List   Certificate Revocation List  http://crl.r2m01.amazontrust.com/r2m01.crlhttp://crl.r2m01.amazontrust.com/r2m01.crl
+
+ OCSP URI                      OCSP URI                     http://ocsp.r2m01.amazontrust.comhttp://ocsp.r2m01.amazontrust.com
+
+ OCSP stapling                 OCSP stapling                not offerednot offered
+
+ OCSP must staple extension    OCSP must staple extension   --
+--
+ DNS CAA RR DNS CAA RR (experimental)     (experimental)    not offerednot offered
+
+ Certificate Transparency      Certificate Transparency     yesyes (certificate extension)
+ (certificate extension)
+ Certificates provided Certificates provided        3        3
+
+ Issuer                        Issuer                       Amazon RSA 2048 M01Amazon RSA 2048 M01 ( (AmazonAmazon from  from USUS))
+
+ Intermediate cert validity    Intermediate cert validity   #1: #1: ok > 40 daysok > 40 days (2030-08-23 22:21).  (2030-08-23 22:21). Amazon RSA 2048 M01Amazon RSA 2048 M01 <--  <-- Amazon Root CA 1Amazon Root CA 1
+
+                                                            #2: #2: ok > 40 daysok > 40 days (2037-12-31 01:00).  (2037-12-31 01:00). Amazon Root CA 1Amazon Root CA 1 <--  <-- Starfield Services Root Certificate Authority - G2Starfield Services Root Certificate Authority - G2
+
+ Intermediate Bad OCSP Intermediate Bad OCSP (exp.)  (exp.) OkOk
+
+
+
+
+
+ Testing HTTP header response @ "/"  Testing HTTP header response @ "/" 
+
+
+
+ HTTP Status Code            HTTP Status Code             200 OK  200 OK
+
+ HTTP clock skew               HTTP clock skew              -1 sec from localtime-1 sec from localtime
+
+ Strict Transport Security     Strict Transport Security    not offerednot offered
+
+ Public Key Pinning            Public Key Pinning           --
+--
+ Server banner                 Server banner                Heroku
+Heroku
+ Application banner            Application banner           --
+--
+ Cookie(s)                     Cookie(s)                    (none issued at "/")
+(none issued at "/")
+ Security headers              Security headers             X-Frame-OptionsX-Frame-Options: SAMEORIGIN
+: SAMEORIGIN
+                                                            X-Content-Type-OptionsX-Content-Type-Options: nosniff
+: nosniff
+                                                            Access-Control-Allow-OriginAccess-Control-Allow-Origin: *
+: *
+                                                            Cache-ControlCache-Control: public, max-age=0
+: public, max-age=0
+ Reverse Proxy banner          Reverse Proxy banner         Via: 1.1 heroku-router
+Via: 1.1 heroku-router
+
+
+
+
+ Testing vulnerabilities  Testing vulnerabilities 
+
+
+
+ Heartbleed Heartbleed (CVE-2014-0160)                 (CVE-2014-0160)                not vulnerable (OK)not vulnerable (OK), no heartbeat extension
+, no heartbeat extension
+ CCS CCS (CVE-2014-0224)                        (CVE-2014-0224)                       xxd 2024-12-07 by Juergen Weigert et al.
+not vulnerable (OK)not vulnerable (OK)
+
+ Ticketbleed Ticketbleed (CVE-2016-9244), experiment.   (CVE-2016-9244), experiment.  xxd 2024-12-07 by Juergen Weigert et al.
+not vulnerable (OK)not vulnerable (OK), reply empty, reply empty
+
+ Opossum Opossum (CVE-2025-49812)                   (CVE-2025-49812)                  not vulnerable (OK)not vulnerable (OK)
+
+ ROBOT                                      ROBOT                                     xxd 2024-12-07 by Juergen Weigert et al.
+/app/tools/testssl.sh/testssl.sh: line 12499: printf: missing hex digit for \x
+xxd 2024-12-07 by Juergen Weigert et al.
+xxd 2024-12-07 by Juergen Weigert et al.
+/app/tools/testssl.sh/testssl.sh: line 12499: printf: missing hex digit for \x
+xxd 2024-12-07 by Juergen Weigert et al.
+Server does not support any cipher suites that use RSA key transportServer does not support any cipher suites that use RSA key transport
+
+ Secure Renegotiation (RFC 5746)            Secure Renegotiation (RFC 5746)           supported (OK)supported (OK)
+
+ Secure Client-Initiated Renegotiation      Secure Client-Initiated Renegotiation     not vulnerable (OK)not vulnerable (OK)
+
+ CRIME, TLS  CRIME, TLS (CVE-2012-4929)                (CVE-2012-4929)                not vulnerable (OK)not vulnerable (OK)
+
+ BREACH BREACH (CVE-2013-3587)                     (CVE-2013-3587)                    potentially NOT ok, "br gzip deflate" HTTP compression detected.potentially NOT ok, "br gzip deflate" HTTP compression detected. - only supplied "/" tested
+ - only supplied "/" tested
+                                           Can be ignored for static pages or if no secrets in the page
+                                           Can be ignored for static pages or if no secrets in the page
+ POODLE, SSL POODLE, SSL (CVE-2014-3566)                (CVE-2014-3566)               not vulnerable (OK)not vulnerable (OK), no SSLv3 support
+, no SSLv3 support
+ TLS_FALLBACK_SCSV TLS_FALLBACK_SCSV (RFC 7507)               (RFC 7507)              No fallback possible (OK)No fallback possible (OK), no protocol below TLS 1.2 offered
+, no protocol below TLS 1.2 offered
+ SWEET32 SWEET32 (CVE-2016-2183, CVE-2016-6329)     (CVE-2016-2183, CVE-2016-6329)    not vulnerable (OK)not vulnerable (OK), 38/53 (SSLv2: 8/8) local ciphers, 38/53 (SSLv2: 8/8) local ciphers
+
+ FREAK FREAK (CVE-2015-0204)                      (CVE-2015-0204)                     not vulnerable (OK)not vulnerable (OK)
+
+ DROWN DROWN (CVE-2016-0800, CVE-2016-0703)       (CVE-2016-0800, CVE-2016-0703)      not vulnerable on this host and port (OK)not vulnerable on this host and port (OK)
+
+                                           make sure you don't use this certificate elsewhere with SSLv2 enabled services, see
+                                           make sure you don't use this certificate elsewhere with SSLv2 enabled services, see
+                                                                                      https://search.censys.io/search?resource=hosts&virtual_hosts=INCLUDE&q=49FE8D59BA2AD5AE6BFA66EDC936A057D5A0D80C089030DF81B9575066CDEE81https://search.censys.io/search?resource=hosts&virtual_hosts=INCLUDE&q=49FE8D59BA2AD5AE6BFA66EDC936A057D5A0D80C089030DF81B9575066CDEE81
+
+ LOGJAM LOGJAM (CVE-2015-4000), experimental       (CVE-2015-4000), experimental      not vulnerable (OK):not vulnerable (OK): no DH EXPORT ciphers no DH EXPORT ciphers, no DH key detected with <= TLS 1.2, no DH key detected with <= TLS 1.2
+
+ BEAST BEAST (CVE-2011-3389)                      (CVE-2011-3389)                     not vulnerable (OK)not vulnerable (OK), no SSL3 or TLS1
+, no SSL3 or TLS1
+ LUCKY13 LUCKY13 (CVE-2013-0169), experimental      (CVE-2013-0169), experimental     potentially potentially VULNERABLEVULNERABLE, uses cipher block chaining (CBC) ciphers with TLS. Check patches, uses cipher block chaining (CBC) ciphers with TLS. Check patches
+
+ Winshock Winshock (CVE-2014-6321), experimental     (CVE-2014-6321), experimental    xxd 2024-12-07 by Juergen Weigert et al.
+/app/tools/testssl.sh/testssl.sh: line 12499: printf: missing hex digit for \x
+xxd 2024-12-07 by Juergen Weigert et al.
+xxd 2024-12-07 by Juergen Weigert et al.
+/app/tools/testssl.sh/testssl.sh: line 12499: printf: missing hex digit for \x
+xxd 2024-12-07 by Juergen Weigert et al.
+xxd 2024-12-07 by Juergen Weigert et al.
+/app/tools/testssl.sh/testssl.sh: line 12499: printf: missing hex digit for \x
+xxd 2024-12-07 by Juergen Weigert et al.
+not vulnerable (OK)not vulnerable (OK) - doesn't seem to be IIS 8.x
+ - doesn't seem to be IIS 8.x
+ RC4 RC4 (CVE-2013-2566, CVE-2015-2808)         (CVE-2013-2566, CVE-2015-2808)        no RC4 ciphers detected (OK)no RC4 ciphers detected (OK)
+
+
+
+
+
+ Running client simulations  Running client simulations (HTTP) (HTTP) via openssl via openssl  -- pls note "--ssl-native" will return some false results -- pls note "--ssl-native" will return some false results
+
+
+
+ Browser                      Protocol  Cipher Suite Name (OpenSSL)        Browser                      Protocol  Cipher Suite Name (OpenSSL)       Forward SecrecyForward Secrecy
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+ Android 7.0 (native)          Android 7.0 (native)         TLSv1.2   TLSv1.2   ECDHE-RSA-AES128-GCM-SHA256ECDHE-RSA-AES128-GCM-SHA256              256 bit ECDH (P-256)256 bit ECDH (P-256)
+
+ Android 8.1 (native)          Android 8.1 (native)         TLSv1.2   TLSv1.2   ECDHE-RSA-AES128-GCM-SHA256ECDHE-RSA-AES128-GCM-SHA256              256 bit ECDH (P-256)256 bit ECDH (P-256)
+
+ Android 9.0 (native)          Android 9.0 (native)         Local problem: TLS 1.3 not supported, Local problem: TLS 1.3 not supported, No connection
+No connection
+ Android 10.0 (native)         Android 10.0 (native)        Local problem: TLS 1.3 not supported, Local problem: TLS 1.3 not supported, No connection
+No connection
+ Android 11/12 (native)        Android 11/12 (native)       Local problem: TLS 1.3 not supported, Local problem: TLS 1.3 not supported, No connection
+No connection
+ Android 13/14 (native)        Android 13/14 (native)       Local problem: TLS 1.3 not supported, Local problem: TLS 1.3 not supported, No connection
+No connection
+ Android 15 (native)           Android 15 (native)          Local problem: TLS 1.3 not supported, Local problem: TLS 1.3 not supported, No connection
+No connection
+ Chrome 101 (Win 10)           Chrome 101 (Win 10)          Local problem: TLS 1.3 not supported, Local problem: TLS 1.3 not supported, No connection
+No connection
+ Chromium 137 (Win 11)         Chromium 137 (Win 11)        Local problem: TLS 1.3 not supported, Local problem: TLS 1.3 not supported, No connection
+No connection
+ Firefox 100 (Win 10)          Firefox 100 (Win 10)         Local problem: TLS 1.3 not supported, Local problem: TLS 1.3 not supported, No connection
+No connection
+ Firefox 137 (Win 11)          Firefox 137 (Win 11)         Local problem: TLS 1.3 not supported, Local problem: TLS 1.3 not supported, No connection
+No connection
+ IE 8 Win 7                    IE 8 Win 7                   No connection
+No connection
+ IE 11 Win 7                   IE 11 Win 7                  TLSv1.2   TLSv1.2   ECDHE-RSA-AES128-SHA256ECDHE-RSA-AES128-SHA256                      256 bit ECDH (P-256)256 bit ECDH (P-256)
+
+ IE 11 Win 8.1                 IE 11 Win 8.1                TLSv1.2   TLSv1.2   ECDHE-RSA-AES128-SHA256ECDHE-RSA-AES128-SHA256                      256 bit ECDH (P-256)256 bit ECDH (P-256)
+
+ IE 11 Win Phone 8.1           IE 11 Win Phone 8.1          TLSv1.2   TLSv1.2   ECDHE-RSA-AES128-SHA256ECDHE-RSA-AES128-SHA256                      256 bit ECDH (P-256)256 bit ECDH (P-256)
+
+ IE 11 Win 10                  IE 11 Win 10                 TLSv1.2   TLSv1.2   ECDHE-RSA-AES128-GCM-SHA256ECDHE-RSA-AES128-GCM-SHA256              256 bit ECDH (P-256)256 bit ECDH (P-256)
+
+ Edge 15 Win 10                Edge 15 Win 10               TLSv1.2   TLSv1.2   ECDHE-RSA-AES128-GCM-SHA256ECDHE-RSA-AES128-GCM-SHA256              256 bit ECDH (P-256)256 bit ECDH (P-256)
+
+ Edge 101 Win 10 21H2          Edge 101 Win 10 21H2         Local problem: TLS 1.3 not supported, Local problem: TLS 1.3 not supported, No connection
+No connection
+ Edge 133 Win 11 23H2          Edge 133 Win 11 23H2         Local problem: TLS 1.3 not supported, Local problem: TLS 1.3 not supported, No connection
+No connection
+ Safari 18.4 (iOS 18.4)        Safari 18.4 (iOS 18.4)       Local problem: TLS 1.3 not supported, Local problem: TLS 1.3 not supported, No connection
+No connection
+ Safari 15.4 (macOS 12.3.1)    Safari 15.4 (macOS 12.3.1)   Local problem: TLS 1.3 not supported, Local problem: TLS 1.3 not supported, No connection
+No connection
+ Safari 18.4 (macOS 15.4)      Safari 18.4 (macOS 15.4)     Local problem: TLS 1.3 not supported, Local problem: TLS 1.3 not supported, No connection
+No connection
+ Java 7u25                     Java 7u25                    No connection
+No connection
+ Java 8u442 (OpenJDK)          Java 8u442 (OpenJDK)         Local problem: TLS 1.3 not supported, Local problem: TLS 1.3 not supported, No connection
+No connection
+ Java 11.0.2 (OpenJDK)         Java 11.0.2 (OpenJDK)        Local problem: TLS 1.3 not supported, Local problem: TLS 1.3 not supported, No connection
+No connection
+ Java 17.0.3 (OpenJDK)         Java 17.0.3 (OpenJDK)        Local problem: TLS 1.3 not supported, Local problem: TLS 1.3 not supported, No connection
+No connection
+ Java 21.0.6 (OpenJDK)         Java 21.0.6 (OpenJDK)        Local problem: TLS 1.3 not supported, Local problem: TLS 1.3 not supported, No connection
+No connection
+ go 1.17.8                     go 1.17.8                    Local problem: TLS 1.3 not supported, Local problem: TLS 1.3 not supported, No connection
+No connection
+ LibreSSL 3.3.6 (macOS)        LibreSSL 3.3.6 (macOS)       Local problem: TLS 1.3 not supported, Local problem: TLS 1.3 not supported, No connection
+No connection
+ OpenSSL 1.0.2e                OpenSSL 1.0.2e               TLSv1.2   TLSv1.2   ECDHE-RSA-AES128-GCM-SHA256ECDHE-RSA-AES128-GCM-SHA256              256 bit ECDH (P-256)256 bit ECDH (P-256)
+
+ OpenSSL 1.1.1d (Debian)       OpenSSL 1.1.1d (Debian)      Local problem: TLS 1.3 not supported, Local problem: TLS 1.3 not supported, No connection
+No connection
+ OpenSSL 3.0.15 (Debian)       OpenSSL 3.0.15 (Debian)      Local problem: TLS 1.3 not supported, Local problem: TLS 1.3 not supported, No connection
+No connection
+ OpenSSL 3.5.0 (git)           OpenSSL 3.5.0 (git)          Local problem: TLS 1.3 not supported, Local problem: TLS 1.3 not supported, No connection
+No connection
+ Apple Mail (16.0)             Apple Mail (16.0)            TLSv1.2   TLSv1.2   ECDHE-RSA-AES128-GCM-SHA256ECDHE-RSA-AES128-GCM-SHA256              256 bit ECDH (P-256)256 bit ECDH (P-256)
+
+ Thunderbird (91.9)            Thunderbird (91.9)           Local problem: TLS 1.3 not supported, Local problem: TLS 1.3 not supported, No connection
+No connection
+
+
+
+
+ Rating (experimental)  Rating (experimental) 
+
+
+
+ Rating specs Rating specs (not complete)   (not complete)  SSL Labs's 'SSL Server Rating Guide' (version 2009r from 2025-05-16)
+SSL Labs's 'SSL Server Rating Guide' (version 2009r from 2025-05-16)
+ Specification documentation   Specification documentation  https://github.com/ssllabs/research/wiki/SSL-Server-Rating-Guidehttps://github.com/ssllabs/research/wiki/SSL-Server-Rating-Guide
+
+ Protocol Support  Protocol Support (weighted)  (weighted)  100 (30)
+100 (30)
+ Key Exchange  Key Exchange     (weighted)      (weighted)  90 (27)
+90 (27)
+ Cipher Strength  Cipher Strength  (weighted)   (weighted)  90 (36)
+90 (36)
+ Final Score                   Final Score                  93
+93
+ Overall Grade                 Overall Grade                A-A-
+
+ Grade warning                 Grade warning                TLS 1.3 is not supportedTLS 1.3 is not supported
+
+
+
+ Done 2026-02-27 16:52:12 [ 190s] -->> 46.137.15.86:443 (juice-shop.herokuapp.com) <<-- Done 2026-02-27 16:52:12 [ 190s] -->> 46.137.15.86:443 (juice-shop.herokuapp.com) <<--
+
+
+
+----------------------------------------------------------------------------------------------------------
+
+ Start 2026-02-27 16:52:12        -->> 54.220.192.176:443 (juice-shop.herokuapp.com) <<-- Start 2026-02-27 16:52:12        -->> 54.220.192.176:443 (juice-shop.herokuapp.com) <<--
+
+
+
+ Further IP addresses:    Further IP addresses:   54.73.53.134 46.137.15.86 
+54.73.53.134 46.137.15.86 
+ rDNS (54.220.192.176):   rDNS (54.220.192.176):  ec2-54-220-192-176.eu-west-1.compute.amazonaws.com.ec2-54-220-192-176.eu-west-1.compute.amazonaws.com.
+
+xxd 2024-12-07 by Juergen Weigert et al.
+/app/tools/testssl.sh/testssl.sh: line 12499: printf: missing hex digit for \x
+xxd 2024-12-07 by Juergen Weigert et al.
+xxd 2024-12-07 by Juergen Weigert et al.
+/app/tools/testssl.sh/testssl.sh: line 12499: printf: missing hex digit for \x
+xxd 2024-12-07 by Juergen Weigert et al.
+xxd 2024-12-07 by Juergen Weigert et al.
+/app/tools/testssl.sh/testssl.sh: line 12499: printf: missing hex digit for \x
+xxd 2024-12-07 by Juergen Weigert et al.
+xxd 2024-12-07 by Juergen Weigert et al.
+/app/tools/testssl.sh/testssl.sh: line 12499: printf: missing hex digit for \x
+xxd 2024-12-07 by Juergen Weigert et al.
+xxd 2024-12-07 by Juergen Weigert et al.
+/app/tools/testssl.sh/testssl.sh: line 12499: printf: missing hex digit for \x
+xxd 2024-12-07 by Juergen Weigert et al.
+xxd 2024-12-07 by Juergen Weigert et al.
+/app/tools/testssl.sh/testssl.sh: line 12499: printf: missing hex digit for \x
+xxd 2024-12-07 by Juergen Weigert et al.
+xxd 2024-12-07 by Juergen Weigert et al.
+xxd 2024-12-07 by Juergen Weigert et al.
+/app/tools/testssl.sh/testssl.sh: line 12499: printf: missing hex digit for \x
+xxd 2024-12-07 by Juergen Weigert et al.
+xxd 2024-12-07 by Juergen Weigert et al.
+ Service detected:       Service detected:       HTTP HTTP
+
+xxd 2024-12-07 by Juergen Weigert et al.
+/app/tools/testssl.sh/testssl.sh: line 12499: printf: missing hex digit for \x
+xxd 2024-12-07 by Juergen Weigert et al.
+ Pre-test:  Pre-test: 128 cipher limit bug128 cipher limit bug
+
+
+
+ Testing protocols  Testing protocols via native opensslvia native openssl
+
+
+
+ SSLv2       SSLv2      not offered (OK)not offered (OK)
+
+ SSLv3       SSLv3      not offered (OK)not offered (OK)
+
+ TLS 1       TLS 1      not offerednot offered
+
+ TLS 1.1     TLS 1.1    not offerednot offered
+
+ TLS 1.2     TLS 1.2    offered (OK)offered (OK)
+
+ TLS 1.3     TLS 1.3    Local problem: /app/tools/testssl.sh/bin/openssl.Linux.x86_64 doesn't support "s_client -tls1_3"Local problem: /app/tools/testssl.sh/bin/openssl.Linux.x86_64 doesn't support "s_client -tls1_3"
+
+ QUIC        QUIC       not offered or timed out
+not offered or timed out
+ NPN/SPDY    NPN/SPDY   not offered
+not offered
+ ALPN/HTTP2  ALPN/HTTP2 not offered
+not offered
+
+
+ Testing cipher categories  Testing cipher categories 
+
+
+
+ NULL ciphers (no encryption)                       NULL ciphers (no encryption)                      not offered (OK)not offered (OK)
+
+ Anonymous NULL Ciphers (no authentication)         Anonymous NULL Ciphers (no authentication)        Terminated
+
+# ========================================================
+# End     : Fri Feb 27 16:54:02 UTC 2026
+# Elapsed : 300s
+# Status  : TIMED OUT after 300s (exit 124)
+# ========================================================

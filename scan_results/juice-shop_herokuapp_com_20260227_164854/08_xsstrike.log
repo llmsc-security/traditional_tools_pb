@@ -1,0 +1,33 @@
+# ========================================================
+# Tool    : 08_xsstrike
+# Target  : https://juice-shop.herokuapp.com
+# Start   : Fri Feb 27 16:49:02 UTC 2026
+# Timeout : 300s
+# Cmd     : /app/tools/xsstrike --url https://juice-shop.herokuapp.com --crawl --blind --skip-dom --timeout 10
+# ========================================================
+
+[91m
+	XSStrike [97mv3.1.5
+[0m
+[97m[~][0m Crawling the target [0m
+[97m[~][0m Parsing                                          [0m[91m------------------------------------------------------------[0m
+[92m[+][0m Vulnerable component: jquery v2.2.4 [0m
+[93m[!][0m Component location: https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js [0m
+[93m[!][0m Total vulnerabilities: 3 [0m
+[93m[!][0m [92mSummary:[0m jQuery before 3.4.0, as used in Drupal, Backdrop CMS, and other products, mishandles jQuery.extend(true, {}, ...) because of Object.prototype pollution [0m
+[93m[!][0m Severity: low [0m
+[93m[!][0m CVE: CVE-2019-11358 [0m
+[93m[!][0m [92mSummary:[0m parseHTML() executes scripts in event handlers [0m
+[93m[!][0m Severity: medium [0m
+[93m[!][0m CVE: CVE-2015-9251 [0m
+[93m[!][0m [92mSummary:[0m 3rd party CORS request may execute [0m
+[93m[!][0m Severity: medium [0m
+[93m[!][0m CVE: CVE-2015-9251 [0m
+[91m------------------------------------------------------------[0m
+[93m[!][0m Progress: 1/1 [0m
+
+# ========================================================
+# End     : Fri Feb 27 16:49:08 UTC 2026
+# Elapsed : 6s
+# Status  : OK in 6s
+# ========================================================

@@ -1,0 +1,43 @@
+# ========================================================
+# Tool    : 03_nikto
+# Target  : https://juice-shop.herokuapp.com
+# Start   : Fri Feb 27 16:49:02 UTC 2026
+# Timeout : 300s
+# Cmd     : nikto -h https://juice-shop.herokuapp.com -maxtime 300s -output /mnt/scan_results/juice-shop_herokuapp_com_20260227_164854/03_nikto.log -Format txt -nointeractive -Tuning 123456789abcde
+# ========================================================
+
+- Nikto v2.6.0
+---------------------------------------------------------------------------
++ Target IP:          54.73.53.134
++ Target Hostname:    juice-shop.herokuapp.com
++ Target Port:        443
+---------------------------------------------------------------------------
++ SSL Info:           Subject:  /CN=*.herokuapp.com
+                      CN:       *.herokuapp.com
+                      SAN:      *.herokuapp.com
+                      Ciphers:  ECDHE-RSA-AES128-GCM-SHA256
+                      Issuer:   /C=US/O=Amazon/CN=Amazon RSA 2048 M01
++ Platform:           Unknown
++ Start Time:         2026-02-27 16:49:04 (GMT0)
+---------------------------------------------------------------------------
++ Server: Heroku
++ Multiple IPs found: 54.73.53.134, 46.137.15.86, 54.220.192.176
++ [999986] /: Retrieved via header: 1.1 heroku-router.
++ [999986] /: Retrieved access-control-allow-origin header: *.
++ [999100] /: Uncommon header(s) 'x-recruiting' found, with contents: /#/jobs.
++ [999100] /: Uncommon header(s) 'reporting-endpoints' found, with contents: heroku-nel="https://nel.heroku.com/reports?s=QfriWLL1MEzWSQdMRS5Y%2F5oWWUCSsp%2FJH1bqjuv8HYk%3D&sid=812dcc77-0bd0-43b1-a5f1-b25750382959&ts=1772210946".
++ No CGI Directories found (use '-C all' to force check all possible dirs). CGI tests skipped.
++ [999997] /robots.txt: Entry '/ftp/' is returned a non-forbidden or redirect HTTP code (200). See: https://portswigger.net/kb/issues/00600600_robots-txt-file
++ [999996] /robots.txt: contains 1 entry which should be manually viewed. See: https://developer.mozilla.org/en-US/docs/Glossary/Robots.txt
++ [999962] /: Server banner changed from 'Heroku' to 'heroku-router'.
++ [999966] /: The Content-Encoding header is set to "deflate" which may mean that the server is vulnerable to the BREACH attack. See: http://breachattack.com/
++ [013587] /: Suggested security header missing: permissions-policy. See: https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Permissions-Policy
++ [013587] /: Suggested security header missing: content-security-policy. See: https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP
++ [013587] /: Suggested security header missing: strict-transport-security. See: https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Strict-Transport-Security
++ [013587] /: Suggested security header missing: referrer-policy. See: https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Referrer-Policy
+
+# ========================================================
+# End     : Fri Feb 27 16:54:02 UTC 2026
+# Elapsed : 300s
+# Status  : TIMED OUT after 300s (exit 124)
+# ========================================================

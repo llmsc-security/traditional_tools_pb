@@ -1,0 +1,21 @@
+[[34mINF[0m] Current nuclei version: v3.7.0 ([92mlatest[0m)
+[[34mINF[0m] Current nuclei-templates version: v10.3.9 ([92mlatest[0m)
+[[34mINF[0m] New templates added in latest release: 182
+[[34mINF[0m] Templates loaded for current scan: 143
+[[34mINF[0m] Executing 143 signed templates from projectdiscovery/nuclei-templates
+[[34mINF[0m] Targets loaded for current scan: 1
+[0:00:05] | Templates: 143 | Hosts: 1 | RPS: 17 | Matched: 0 | Errors: 0 | Requests: 94/386 (24%)
+[0:00:10] | Templates: 143 | Hosts: 1 | RPS: 21 | Matched: 0 | Errors: 0 | Requests: 221/386 (57%)
+[0:00:15] | Templates: 143 | Hosts: 1 | RPS: 22 | Matched: 0 | Errors: 0 | Requests: 336/386 (87%)
+[[34mINF[0m] Using Interactsh Server: oast.site
+[0:00:20] | Templates: 143 | Hosts: 1 | RPS: 18 | Matched: 0 | Errors: 0 | Requests: 379/386 (98%)
+[0:00:25] | Templates: 143 | Hosts: 1 | RPS: 15 | Matched: 0 | Errors: 0 | Requests: 387/386 (100%)
+[0:00:29] | Templates: 143 | Hosts: 1 | RPS: 13 | Matched: 0 | Errors: 0 | Requests: 387/386 (100%)
+[[34mINF[0m] Scan completed in 29.341447752s. 0 matches found.
+[0:00:29] | Templates: 143 | Hosts: 1 | RPS: 13 | Matched: 0 | Errors: 0 | Requests: 387/386 (100%)
+
+# ========================================================
+# End     : Fri Feb 27 16:49:33 UTC 2026
+# Elapsed : 31s
+# Status  : OK in 31s
+# ========================================================
